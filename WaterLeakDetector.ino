@@ -106,7 +106,6 @@ void checkForWater() {
 
 //Sends an email
 bool sendEmail(String emailMessage){
-  connectToWifi();
   smtpData.setLogin(smtpServer, smtpServerPort, emailSenderAccount, emailSenderPassword);
   smtpData.setSender("ESP32", emailSenderAccount);
   smtpData.setPriority("High");
